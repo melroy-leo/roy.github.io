@@ -109,24 +109,25 @@ flex-direction: column;
     justify-content: center;
 } 
 .featureCard{
-
-    font-size: 15px; 
-    box-shadow: 2px 2px rgb(126, 125, 125);
+    width: 300px;
     background: white;
-    padding: 90px;
-    border-radius: 20px;
-    text-shadow: 2px 1px 4px #6c6969;
-    box-sizing: 90px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 12px 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
 
+.featureCard img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
 }
 .featureCard p{
     font-size: 30px; 
     text-shadow: 2px 1px 4px #a9a3a3;
 
-}
-.featurecard img  {
-    width: 100%;
-    border-radius: 10px;
 }
 button {
     margin-top: 10px;
