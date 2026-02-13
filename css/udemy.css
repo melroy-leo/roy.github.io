@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'popins',sans-serif;
+}
+body{
+    background: #f7f9fa;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #f7f9fa;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.logo{
+    font-size: 24px;
+    font-weight: 600;
+    color: purple;
+}
+
+
+header input {
+    width: 40%;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: rgb(216, 83, 246);
+    text-transform: uppercase;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.signup {
+    background: purple;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+.hero {
+    height: 300px;
+    background: linear-gradient(to right, #a435f0, #8710d8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+h2{
+    text-align: center;
+        text-shadow: 2px 2px 5px #000000;
+}
+
+.hero button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: white;
+    color: purple;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.courses {
+    padding: 50px;
+   
+}
+
+.cours-container {
+   
+  display: flex;
+    gap: 50px;
+    margin-top: 20px;
+    margin-left: 100px;
+
+}
+    
+.cours-card {
+  background: white;
+    width: 400px;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    
+
+}
+.course-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.course-card:hover {
+    transform: scale(1.05);
+}
+.rating{
+    color:darkviolet
+
+}
+.price {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+    margin-top: 120px;
+}
+.footer-links {
+    
+    margin-bottom: 30px;
+}
+.footer-column a {
+    text-decoration: none;
+    color: #ccc;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
