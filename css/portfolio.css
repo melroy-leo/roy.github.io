@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:serif;
+}
+.container{
+    padding: 20px;
+}
+.head-one{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+.head-one__contact{
+background-color: orangered;
+color: white;
+padding-left: 10px;
+padding-right: 10px;
+padding-bottom: 5px;
+padding-top: 5px;
+display: inline-block;
+text-decoration: none;
+margin-top:10px ;
+}
+.head-one__name{
+    font-size: 60px;
+}
+.head-one__roll{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.head-one,.head-two,.head-three,.head-four,.head-five{
+    margin-top: 20px;
+}
+.head-one__parah,.head-two__parah,.head-three__parah,.head-four__parah,.head-five__parah{
+    margin-top: 20px;
+}
+.head-five{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+.head-five__title a{
+    color: aquamarine;
+}
+.head-three li,.head-four li{
+    list-style: none;
+}
+.head-three{
+    background-color: #6462FD;
+    color: black;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    height: 230px;
+    vertical-align: top;
+}
+.head-four{
+    background-color: darkorchid;
+    color: black;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    height: 230px;
+    vertical-align: top;
+    width: 710px;
+}
+
+.contact-from{
+    margin-top: 20px;
+}
+
+.contact-from__input,
+.contact-from__textarea,
+.contact-from__submit{
+    margin-top: 20px;
+}
+
+.contact-from__input{
+    padding: 10px;
+    border: none;
+    border-bottom: solid black 1px;
+}
+.contact-from__textarea{
+    padding: 10px;
+    border: none;
+    border: solid black 1px;
+}
+.contact-from__submit{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    background-color: purple;
+    color: aliceblue;
+    border: solid black 1px;
+}
+
