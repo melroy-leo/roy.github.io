@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    padding: 10px;
+}
+.container{
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    align-content: center;
+    justify-content: center;
+    
+}
+.subscription__title{
+   background-color: blueviolet;
+    padding: 10px;
+    text-align: center;
+}
+.subscription__para{
+     padding: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(56, 55, 55);
+}
+.subscription__card{
+    background-color: rgb(5, 5, 5);
+    color: white;
+    width: 200px;
+    height: 250px;
+    flex-wrap: wrap; 
+    padding: 10px;
+    border-radius: 10px;  
+    margin-top: 100px;
+    
+}
+.subscription__card__title{
+    font-size: 50px;
+    font-weight: bold;
+    color: chartreuse;
+    text-align: center;
+    margin-left: 10px;
+}
+.subscription__card__title2{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-left: 5px;
+}
