@@ -12,6 +12,10 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    position: sticky;
+    top: 0;
+     background-color: #ffffff;
+     z-index: 100;  
     border-bottom: 1px solid #030303;
   
 }
@@ -201,3 +205,116 @@ body{
     margin: 20px;
    }
    
+/* ---------------------- TABLET ---------------------- */
+@media screen and (max-width: 1024px){
+
+    .navbar__s2{
+        width: 45%;
+    }
+
+    .categories{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .recemmended__container,
+    .popular__container{
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .cours-card{
+        width: 40%;
+    }
+
+    .topics__container p{
+        flex-basis: 45%;
+    }
+
+}
+
+
+/* ---------------------- MOBILE ---------------------- */
+@media screen and (max-width: 768px){
+    .navbar{
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .navbar__s2{
+        width: 100%;
+        order: 3;
+    }
+
+    .navbar__s3{
+        display: none;  
+    }
+    .categories{
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .categories::-webkit-scrollbar{
+        display: none;
+    }
+
+    .categories p{
+        flex: 0 0 auto;
+        font-size: 14px;
+    }
+    .sale img{
+        height: 200px;
+    }
+
+    .sale__a1__subtitle{
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .sale p{
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .cours-card{
+        width: 90%;
+    }
+
+    .topics__container p{
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .footer__one{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer__two{
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .navbar__s1__title{
+        font-size: 22px;
+    }
+
+    .recemmended h1,
+    .popular h1{
+        font-size: 22px;
+    }
+
+    .topics__title{
+        text-align: center;
+    }
+
+}
