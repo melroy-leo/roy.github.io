@@ -1,0 +1,63 @@
+body{
+font-family: Arial;
+text-align:center;
+background:#f2f2f2;
+}
+
+.form-box{
+background:white;
+padding:20px;
+width:400px;
+margin:auto;
+border-radius:10px;
+box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+}
+
+table{
+width:100%;
+}
+
+td{
+padding:10px;
+text-align:left;
+}
+
+input,select{
+width:100%;
+padding:6px;
+}
+
+.gender input{
+width:auto;
+}
+
+button{
+width:100%;
+padding:10px;
+background:green;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+.data-table{
+margin:auto;
+margin-top:20px;
+width:70%;
+border-collapse:collapse;
+background:white;
+}
+
+.data-table th,
+.data-table td{
+border:1px solid gray;
+padding:10px;
+}
+
+.delete{
+background:red;
+color:white;
+border:none;
+padding:5px 10px;
+cursor:pointer;
+}

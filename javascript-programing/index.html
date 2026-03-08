@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Form</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+
+<body>
+
+    <h1>Student Form</h1>
+
+    <div class="form-box">
+
+        <table>
+
+            <tr>
+                <td>Name :</td>
+                <td><input type="text" id="name" placeholder="Enter name"></td>
+            </tr>
+
+            <tr>
+                <td>Age :</td>
+                <td><input type="number" id="age" placeholder="Enter age"></td>
+            </tr>
+
+            <tr>
+                <td>Mail :</td>
+                <td><input type="email" id="email" placeholder="Enter mail"></td>
+            </tr>
+
+            <tr>
+                <td>Gender :</td>
+                <td class="gender">
+                    <label><input type="radio" name="gender" value="Male"> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Course :</td>
+                <td>
+                    <select id="course">
+                        <option>JavaScript</option>
+                        <option>HTML</option>
+                        <option>CSS</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <button id="saveBtn">Save</button>
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <br>
+
+    <table border="1" class="data-table">
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Course</th>
+                <th>Gender</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="tableBody"></tbody>
+
+    </table>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
