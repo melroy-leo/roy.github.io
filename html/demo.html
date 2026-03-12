@@ -1,5 +1,38 @@
-<link rel="stylesheet" href="../css/demo.css">
-
 <div>
+<input type="checkbox" name="checkbox"  value="python"> python
+<input type="checkbox"  name="checkbox" value="C++"> c++
+<input type="checkbox" name="checkbox" value="Java"> java
 
 </div>
+
+<h1 id="result"></h1>
+
+<script>
+    let checkbox = document.getElementsByName("checkbox")
+    let result = document.getElementById("result")
+    
+    skill=[]
+    
+    for(count=0; count<checkbox.length; count=count+1)
+    {
+    checkbox[count].addEventListener("click",function(){
+
+    if(event.target.checked)
+    {
+        console.log("checked")
+        skill.push(event.target.value)
+        result.textContent =skill
+    }
+    else{
+        console.log("unchecked");
+        var index =skill.indexOf(event.target.value)
+        skill.splice(index,1)
+        result.textContent =skill
+        
+    }
+})
+
+}
+
+
+</script>

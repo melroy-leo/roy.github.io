@@ -15,12 +15,12 @@
         <h1 class="text-2xl ">Greenden</h1>
 
         <!--Tailwind Cdn Link-->
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 md:hidden" fill="none" viewBox="0 0 24 24"
+        <svg  id="menuicon"  xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 md:hidden inline cursor-pointer" fill="none" viewBox="0 0 24 24"
             stroke="currentColor" stroke-width="1.5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
 
-        <ul class="flex gap-5 text-gray-600 hidden md:flex">
+        <ul class=" 'flex gap-5 text-gray-600 hidden md:flex">
             <li>
                 <a class="hover:underline  hover:text-black" href="Greenden.html">Home</a>
             </li>
@@ -32,16 +32,35 @@
             </li>
         </ul>
     </nav>
+
+     <!--sidebar-->
+    <div id="sidenav" class="bg-green-100 fixed z-20 m-0  transition-all duration-1000" style="width: 50%; height: 100vh; right: -50%;">
+        <div class="text-right p-5">
+            <p id="close" class="inline cursor-pointer">X</p>
+        </div>
+        
+        <ul class="flex flex-col gap-10 items-center text-gray-600 ">
+            <li>
+                <a class="hover:underline  hover:text-black" href="Greenden.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline  hover:text-black" href="#">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline  hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
 <!--Search bar-->
 <div class="text-center">
     <h1 class="font-bold text-3xl text-center">Our Products</h1>
- <input type="text" class="border border-black p-2 mt-3" style="width: 80%">
+ <input id="search" type="text" class="border border-black p-2 mt-3" style="width: 80%">
  <br>
 </div>
        <!--best Seller-->
     <div class="p-4 text-center">
         <h1 class="font-bold mt-5 text-3xl">Best Seller</h1>
-        <div class="grid grid-cols-2 md:grid-cols-4 mt-8 gap-5">
+        <div  id="product-container" class="grid grid-cols-2 md:grid-cols-4 mt-8 gap-5">
             <div>
                 <img src="./imges/bestseller_1.png" class="inline hover:shadow-xl transform hover:-translate-y-2"
                     alt="">
@@ -98,6 +117,7 @@
     <p>The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
     <p>©2021 Greenday.com</p>
 </div>
+<script src="product.js"></script>
     
 </body>
 </html>
