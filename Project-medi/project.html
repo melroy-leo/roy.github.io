@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medi Billing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+
+        <div class="left">
+            <h2>Patients</h2>
+            <p>MediDesk · City General Hospital</p>
+        </div>
+
+        <div class="right">
+
+            <div class="search-box">
+                <span>🔍</span>
+                <input type="text" placeholder="Search patients, doctors...">
+            </div>
+
+            <div class="bell">
+                🔔
+                <span class="dot"></span>
+            </div>
+
+            <button  onclick="openModal()" class="btn">+ New Patient</button>
+
+        </div>
+
+    </div>
+
+    <div class="top-bar">
+
+        <!-- Search -->
+        <div class="search-box">
+            <span>🔍</span>
+            <input type="text" placeholder="Search patients...">
+        </div>
+
+        <!-- Filter -->
+        <select class="filter">
+            <option>All Status</option>
+            <option>Admitted</option>
+            <option>Discharged</option>
+            <option>Critical</option>
+        </select>
+
+        <!-- Button -->
+        <button class="add-btn">+ Add Patient</button>
+
+    </div>
+
+    <!-- Table -->
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>PATIENT</th>
+                    <th>ID</th>
+                    <th>AGE / GENDER</th>
+                    <th>CONDITION</th>
+                    <th>WARD</th>
+                    <th>STATUS</th>
+                    <th>ADMITTED</th>
+                    <th>ACTION</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- Data later JS la add pannalam -->
+            </tbody>
+        </table>
+    </div>
+    <!-- Add Patient Button -->
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-box">
+
+    <!-- Header -->
+    <div class="modal-header">
+      <h2>Register New Patient</h2>
+     <span onclick="closeModal()" class="modal-box-x">✕</span>
+    </div>
+
+    <!-- Form -->
+    <div class="form-grid">
+
+      <div>
+        <label>FIRST NAME</label>
+        <input type="text" placeholder="First Name">
+      </div>
+
+      <div>
+        <label>LAST NAME</label>
+        <input type="text" placeholder="Last Name">
+      </div>
+
+      <div>
+        <label>AGE</label>
+        <input type="number" placeholder="">
+      </div>
+
+      <div>
+        <label>GENDER</label>
+        <select>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Othres</option>
+        </select>
+      </div>
+
+      <div>
+        <label>PHONE</label>
+        <input type="text" placeholder="+91 98765 43210">
+      </div>
+
+      <div>
+        <label>BLOOD GROUP</label>
+        <select>
+          <option>A+</option>
+          <option>B+</option>
+          <option>O+</option>
+          <option>OB+</option>
+          <option>OB-</option>
+          <option>AB-</option>
+          <option>AB+</option>
+          <option>B-</option>
+        </select>
+      </div>
+
+      <div class="full">
+        <label>CONDITION / DIAGNOSIS</label>
+        <input type="text" placeholder="e.g. Acute Appendicitis">
+      </div>
+
+      <div>
+        <label>ASSIGNED DOCTOR</label>
+        <select>
+          <option>Dr. Priya Mehta</option>
+          <option>Dr. ROY</option>
+          <option>Dr. ramiya</option>
+          <option>Dr. Shalini</option>
+        </select>
+      </div>
+
+      <div>
+        <label>WARD</label>
+        <select>
+          <option>General</option>
+          <option>ICU</option>
+          <option>SCAN</option>
+          <option>Discharge</option>
+        </select>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="modal-footer">
+      <button class="cancel" onclick="closeModal()">Cancel</button>
+      <button class="submit">Register Patient</button>
+    </div>
+
+  </div>
+</div>
+
+</body>
+
+</html>
